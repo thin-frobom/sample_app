@@ -15,6 +15,9 @@ gem 'rails-controller-testing'
 gem 'bcrypt', git: 'https://github.com/codahale/bcrypt-ruby.git', :require => 'bcrypt'
 
 gem 'faker',          '1.6.6'
+gem 'carrierwave',             '0.11.2'
+gem 'mini_magick',             '4.5.1'
+gem 'fog',                     '1.38.0'
 gem 'will_paginate',           '3.1.0'
 gem 'bootstrap-will_paginate', '0.0.10'
 
@@ -23,7 +26,7 @@ gem 'jquery-rails'
 gem 'jquery-turbolinks' 
 
 # Use sqlite3 as the database for Active Record
-
+gem 'sqlite3', '1.3.12'
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
 # Use SCSS for stylesheets
@@ -48,7 +51,7 @@ gem 'jbuilder', '~> 2.5'
 # gem 'capistrano-rails', group: :development
 
 group :development, :test do
-  gem 'sqlite3', '1.3.12'
+  #gem 'sqlite3', '1.3.12'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   # Adds support for Capybara system testing and selenium driver
